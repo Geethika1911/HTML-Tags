@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <title>Zoo Keeper Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .mandatory {
+            color: red;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zoo Keeper Application Form</h1>
+        <p><i>Please complete the form. Mandatory fields are marked with a <span class="mandatory">*</span></i></p>
+        
+        <div class="section">
+            <h3>Contact Details</h3>
+            <label>Name <span class="mandatory">*</span></label><br>
+            <input type="text" name="name" required><br><br>
+            
+            <label>Telephone</label><br>
+            <input type="text" name="telephone"><br><br>
+            
+            <label>Email <span class="mandatory">*</span></label><br>
+            <input type="email" name="email" required><br><br>
+        </div>
+        
+        <div class="section">
+            <h3>Personal Information</h3>
+            <label>Age <span class="mandatory">*</span></label><br>
+            <input type="number" name="age" required><br><br>
+            
+            <label>Gender</label><br>
+            <select name="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            
+            <label>When did you first know you wanted to be a zoo-keeper?</label><br>
+            <textarea name="reason" rows="4" cols="50"></textarea>
+        </div>
+        
+        <div class="section">
+            <h3>Pick Your Favorite Animals</h3>
+            <input type="checkbox" name="animals" value="Zebra"> Zebra
+            <input type="checkbox" name="animals" value="Cat"> Cat
+            <input type="checkbox" name="animals" value="Anaconda"> Anaconda
+            <input type="checkbox" name="animals" value="Human"> Human
+            <input type="checkbox" name="animals" value="Elephant"> Elephant
+            <input type="checkbox" name="animals" value="Wildebeest"> Wildebeest
+            <input type="checkbox" name="animals" value="Pigeon"> Pigeon<br>
+            <input type="checkbox" name="animals" value="Crab"> Crab
+        </div>
+        
+        <button type="submit" style="background-color: blue; color: white;">Submit</button>
+    </div>
+</body>
+</html>
